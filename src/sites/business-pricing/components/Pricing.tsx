@@ -6,8 +6,8 @@ import { Check, Star, Phone, Mail, Info } from "lucide-react";
 const Pricing = () => {
 const plans = [
     {
-      name: "Basic",
-      price: "$199",
+      name: "The Essential Plan",
+      price: "$149",
       description: "Perfect for small businesses just getting started online",
       pages: 1,
       features: [
@@ -51,8 +51,8 @@ const plans = [
       link: "https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-13G403336J0364513NCDI4DY"
     },
     {
-      name: "Enterprise",
-      price: "$599",
+      name: "The Growth Partner Plan",
+      price: "$999",
       description: "For large businesses that need comprehensive online solutions",
       pages: 10,
       features: [
@@ -72,8 +72,9 @@ const plans = [
         "Booking System",
         "Service Pricing Calculator",
         "WhatsApp Chat Button",
-        "Monthly SEO Boost with Network Backlinks + Report|New",
-        "Instagram & Facebook Content Posting (4 posts/week)|New",
+        "Monthly SEO Boost with Network Backlinks + Report",
+        "Instagram & Facebook Content Posting (4 posts/week)",
+        "Google My Business Optimization & Management|New",
       ],
       popular: false,
       color: "green",
@@ -96,7 +97,7 @@ const plans = [
       "Speed optimization",
     ];
     
-    return planName === "Basic" ? basicIncluded : fullIncluded;
+    return planName === "The Essential Plan" ? basicIncluded : fullIncluded;
   };
 
   const getColorClasses = (color: string, popular: boolean) => {
