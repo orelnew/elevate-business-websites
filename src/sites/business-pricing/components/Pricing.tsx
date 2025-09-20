@@ -6,7 +6,7 @@ import { Check, Star, Phone, Mail, Info } from "lucide-react";
 const Pricing = () => {
 const plans = [
     {
-      name: "The Essential Plan",
+      name: "Essential",
       price: "$149",
       description: "Perfect for small businesses just getting started online",
       pages: 1,
@@ -51,7 +51,7 @@ const plans = [
       link: "https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-13G403336J0364513NCDI4DY"
     },
     {
-      name: "The Growth Partner Plan",
+      name: "Growth Partner",
       price: "$999",
       description: "For large businesses that need comprehensive online solutions",
       pages: 10,
@@ -97,7 +97,7 @@ const plans = [
       "Speed optimization",
     ];
     
-    return planName === "The Essential Plan" ? basicIncluded : fullIncluded;
+    return planName === "Essential" ? basicIncluded : fullIncluded;
   };
 
   const getColorClasses = (color: string, popular: boolean) => {
