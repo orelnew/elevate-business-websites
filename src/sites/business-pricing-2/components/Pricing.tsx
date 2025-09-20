@@ -194,8 +194,8 @@ const plans = [
           <div className="text-center mb-6">
             <h3 className="text-2xl font-bold text-emerald-900 mb-2">🛡️ The "Love It or Leave It" Guarantee</h3>
           </div>
-          <div className="grid grid-cols-1 gap-6 text-lg max-w-5xl mx-auto">
-            <div className="flex items-center gap-3">
+          <div className="text-center max-w-5xl mx-auto">
+            <div className="inline-flex items-center gap-3 text-lg">
               <div className="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
                 <Check className="h-5 w-5 text-white" />
               </div>
