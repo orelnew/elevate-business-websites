@@ -4,6 +4,7 @@ import AdminHeader from './components/AdminHeader'
 import LandscapingSite from './sites/landscaping/LandscapingSite'
 import PlumbingSite from './sites/plumbing/PlumbingSite'
 import BusinessPricingSite from './sites/business-pricing/BusinessPricingSite'
+import BusinessPricingSite2 from './sites/business-pricing-2/BusinessPricingSite'
 import HomePage from './components/HomePage'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
               <Route path="/landscaping/*" element={<LandscapingSite />} />
               <Route path="/plumbing/*" element={<PlumbingSite />} />
               <Route path="/business-pricing/*" element={<BusinessPricingSite />} />
+              <Route path="/business-pricing-2/*" element={<BusinessPricingSite2 />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </Router>
