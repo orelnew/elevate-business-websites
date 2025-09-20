@@ -142,22 +142,25 @@ const plans = [
             Choose the perfect plan for your business. All plans include everything you need to start getting more customers online.
           </p>
           
-          {/* Risk Guarantee */}
-          <div className="bg-gradient-to-r from-blue-600 to-blue-500 rounded-2xl p-8 text-white max-w-4xl mx-auto mb-8">
-            <h3 className="text-2xl font-bold mb-4">🛡️ Risk Guarantee</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Check className="h-5 w-5 text-white" />
-                </div>
-                <span>There is no risk for you - pay only if you like the website.</span>
+        </div>
+
+        {/* Risk Guarantee - Full Width */}
+        <div className="bg-gradient-to-r from-blue-100 to-blue-50 rounded-2xl p-8 border border-blue-200 mb-16">
+          <div className="text-center mb-6">
+            <h3 className="text-2xl font-bold text-blue-900 mb-2">🛡️ Risk Guarantee</h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg max-w-4xl mx-auto">
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <Check className="h-5 w-5 text-white" />
               </div>
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Check className="h-5 w-5 text-white" />
-                </div>
-                <span>Payment only once you receive the website.</span>
+              <span className="text-blue-900">There is no risk for you - pay only if you like the website.</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <Check className="h-5 w-5 text-white" />
               </div>
+              <span className="text-blue-900">Payment only once you receive the website.</span>
             </div>
           </div>
         </div>
