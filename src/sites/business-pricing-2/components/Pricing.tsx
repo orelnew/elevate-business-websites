@@ -171,12 +171,6 @@ const plans = [
               </div>
               <span className="text-emerald-900">You pay $0 until you're completely satisfied with your website</span>
             </div>
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
-                <Check className="h-5 w-5 text-white" />
-              </div>
-              <span className="text-emerald-900">If you don't love it, walk away - no hard feelings, no payment</span>
-            </div>
           </div>
         </div>
 
