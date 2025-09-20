@@ -5,7 +5,7 @@ import { Check, Star, Phone, Mail, Info, Target, TrendingUp, Crown } from "lucid
 const Pricing = () => {
 const plans = [
     {
-      name: "The Lead Magnet",
+      name: "The Essential",
       headline: "Your First Customer Acquisition System",
       price: "$149",
       description: "Stop losing customers to competitors with better websites",
@@ -117,7 +117,7 @@ const plans = [
       "Speed optimization",
     ];
     
-    return planName === "The Lead Magnet" ? basicIncluded : fullIncluded;
+    return planName === "The Essential" ? basicIncluded : fullIncluded;
   };
 
   const getColorClasses = (color: string, popular: boolean) => {
@@ -164,7 +164,7 @@ const plans = [
           <div className="text-center mb-6">
             <h3 className="text-2xl font-bold text-emerald-900 mb-2">🛡️ The "Love It or Leave It" Guarantee</h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 gap-6 text-lg max-w-5xl mx-auto">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
                 <Check className="h-5 w-5 text-white" />
@@ -198,8 +198,6 @@ const plans = [
                 <CardContent className="p-8">
                   <div className="text-center mb-8">
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
-                    <h4 className="text-lg font-semibold text-emerald-600 mb-3">{plan.headline}</h4>
-                    <p className="text-gray-600 mb-2">{plan.description}</p>
                     <p className="text-sm text-gray-500 mb-4">{plan.target}</p>
                     <div className="mb-4">
                       <div className="text-4xl font-bold text-gray-900 mb-1">
