@@ -12,19 +12,22 @@ const plans = [
       target: "Perfect for new businesses or those tired of missed opportunities",
       valueBundles: [
         {
-          name: "The Professional Foundation",
+          name: "Professional Foundation",
           description: "3 conversion-focused pages + mobile-first design that works on every device",
-          icon: Target
+          icon: Target,
+          isNew: false
         },
         {
-          name: "The Trust Builder",
+          name: "Trust & Authority Builder",
           description: "Customer testimonials + photo gallery that proves your quality",
-          icon: Check
+          icon: Check,
+          isNew: false
         },
         {
-          name: "The Lead Capture Engine", 
+          name: "Lead Capture System", 
           description: "Contact forms + WhatsApp integration that turns visitors into customers",
-          icon: TrendingUp
+          icon: TrendingUp,
+          isNew: false
         }
       ],
       popular: false,
@@ -39,24 +42,34 @@ const plans = [
       target: "Perfect for established businesses ready to scale beyond word-of-mouth",
       valueBundles: [
         {
-          name: "The Authority Platform",
-          description: "10 pages + blog + before/after galleries that position you as the obvious choice",
-          icon: Crown
+          name: "Professional Foundation",
+          description: "10 pages + mobile-first design + enhanced galleries that work on every device",
+          icon: Target,
+          isNew: false
         },
         {
-          name: "The Customer Acquisition System",
-          description: "Booking system + lead capture pop-ups + service calculator that converts visitors instantly",
-          icon: Target
+          name: "Trust & Authority Builder",
+          description: "Advanced testimonials + before/after galleries + portfolio showcase that proves your expertise",
+          icon: Check,
+          isNew: false
         },
         {
-          name: "The Local Domination Kit",
+          name: "Lead Capture System", 
+          description: "Advanced booking system + lead capture pop-ups + service calculator that converts visitors instantly",
+          icon: TrendingUp,
+          isNew: false
+        },
+        {
+          name: "Local Market Domination",
           description: "SEO optimization + service area mapping + social media integration that gets you found first",
-          icon: TrendingUp
+          icon: Crown,
+          isNew: true
         },
         {
-          name: "The Professional Advantage",
-          description: "Portfolio showcase + testimonial system that makes competitors look amateur",
-          icon: Check
+          name: "Content & Blog Platform",
+          description: "Professional blog + content management that positions you as the industry expert",
+          icon: Star,
+          isNew: true
         }
       ],
       popular: true,
@@ -71,29 +84,46 @@ const plans = [
       target: "Perfect for ambitious businesses ready to capture every opportunity in their area",
       valueBundles: [
         {
-          name: "The Authority Empire",
-          description: "30 pages + unlimited galleries + advanced testimonials that establish total market dominance",
-          icon: Crown
+          name: "Professional Foundation",
+          description: "30 pages + unlimited galleries + mobile-first design that works on every device",
+          icon: Target,
+          isNew: false
         },
         {
-          name: "The Customer Magnet System", 
+          name: "Trust & Authority Builder",
+          description: "Advanced testimonial system + unlimited galleries + portfolio showcase that proves your expertise",
+          icon: Check,
+          isNew: false
+        },
+        {
+          name: "Lead Capture System", 
           description: "Advanced booking + lead capture + pricing calculator that converts every visitor type",
-          icon: Target
+          icon: TrendingUp,
+          isNew: false
         },
         {
-          name: "The Search Engine Domination Kit",
+          name: "Local Market Domination",
           description: "Premium SEO + monthly backlink campaigns + reports that keep you ranking #1",
-          icon: TrendingUp
+          icon: Crown,
+          isNew: false
         },
         {
-          name: "The Social Media Authority Engine",
+          name: "Content & Blog Platform",
+          description: "Professional blog + content management that positions you as the industry expert",
+          icon: Star,
+          isNew: false
+        },
+        {
+          name: "Social Media Authority",
           description: "4 posts/week + Google My Business management that keeps you top-of-mind everywhere",
-          icon: Star
+          icon: Mail,
+          isNew: true
         },
         {
-          name: "The Expansion Infrastructure",
+          name: "Unlimited Growth Platform",
           description: "Unlimited page creation + on-demand additions that grow with your business",
-          icon: Check
+          icon: Info,
+          isNew: true
         }
       ],
       popular: false,
@@ -230,8 +260,15 @@ const plans = [
                             <div className="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                               <IconComponent className="h-4 w-4 text-white" />
                             </div>
-                            <div>
-                              <h5 className="font-semibold text-gray-900 mb-1">{bundle.name}</h5>
+                            <div className="flex-1">
+                              <div className="flex items-center gap-2 mb-1">
+                                <h5 className="font-semibold text-gray-900">{bundle.name}</h5>
+                                {bundle.isNew && (
+                                  <span className="bg-amber-100 text-amber-800 text-xs font-medium px-2 py-1 rounded-full">
+                                    NEW
+                                  </span>
+                                )}
+                              </div>
                               <p className="text-sm text-gray-600">{bundle.description}</p>
                             </div>
                           </div>
