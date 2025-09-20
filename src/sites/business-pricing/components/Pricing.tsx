@@ -45,6 +45,8 @@ const plans = [
         "Booking System|New",
         "Service Pricing Calculator|New",
         "WhatsApp Chat Button|New",
+        "Lead Capture & Welcome Pop-up|New",
+        "Additional pages on demand like Jobs, and others|New",
       ],
       popular: true,
       color: "purple",
@@ -75,6 +77,8 @@ const plans = [
         "Monthly SEO Boost with Network Backlinks + Report",
         "Instagram & Facebook Content Posting (4 posts/week)",
         "Google My Business Optimization & Management|New",
+        "Lead Capture & Welcome Pop-up",
+        "Additional pages on demand like Jobs, and others",
       ],
       popular: false,
       color: "green",
@@ -137,6 +141,25 @@ const plans = [
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Choose the perfect plan for your business. All plans include everything you need to start getting more customers online.
           </p>
+          
+          {/* Risk Guarantee */}
+          <div className="bg-gradient-to-r from-blue-600 to-blue-500 rounded-2xl p-8 text-white max-w-4xl mx-auto mb-8">
+            <h3 className="text-2xl font-bold mb-4">🛡️ Risk Guarantee</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Check className="h-5 w-5 text-white" />
+                </div>
+                <span>There is no risk for you - pay only if you like the website.</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Check className="h-5 w-5 text-white" />
+                </div>
+                <span>Payment only once you receive the website.</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
